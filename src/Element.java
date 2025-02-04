@@ -1,3 +1,11 @@
+/*
+CS 1027B – Assignment 1
+Name: Tudor Filimon
+Student Number: 251406803
+Email: tfilimon@uwo.ca
+Created: January 30, 2025
+*/
+
 public class Element {
     //instance vars
     private int atomicNo;
@@ -22,21 +30,19 @@ public class Element {
     public String getSymbol() { return symbol; }
     public String getState() { return state; }
     public String getType() { return type; }
+    public String getName() { return name; }
 
     //setters
     public void setName(String nm) { name = nm; }
     public void setState(String st) { state = st; }
     public void setType(String ty) { type = ty; }
 
-    //stringify
+    //toString()
     public String toString() { return symbol + " (" + name + ")"; }
 
     //equality
     public boolean equals(Element other) {
-        if (this.atomicNo == other.atomicNo) {
-            return true;
-        } else {
-            return false;
-        }
+        //return true or false
+        return this.atomicNo == other.atomicNo;
     }
 }
